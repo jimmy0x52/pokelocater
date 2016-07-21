@@ -417,7 +417,7 @@ def main(location=None, direction=None):
     print "Scanning...", original_lat, original_long
     
     origin = LatLng.from_degrees(original_lat, original_long)
-    parent = CellId.from_lat_lng(LatLng.from_degrees(original_lat, original_long)).parent(30)
+    parent = CellId.from_lat_lng(LatLng.from_degrees(original_lat, original_long)).parent(15)
 
     h = heartbeat(api_endpoint, access_token, response, login_type)
     hs = [h]
